@@ -152,4 +152,12 @@ const books = getBook(2);
 // const author = books.author;
 // console.log(title);
 
-const { title, author } = books;
+const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
+  books;
+console.log(author, " ,", title, genres);
+
+// const firstGenres = genres[0];
+// const secondGenres = genres[1];
+
+const [firstGenres, secondGenres, ...otherGenres] = genres;
+console.log(firstGenres, secondGenres, otherGenres);
